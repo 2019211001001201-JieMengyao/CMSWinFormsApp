@@ -622,7 +622,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 583);
+            this.ClientSize = new System.Drawing.Size(805, 518);
             this.Controls.Add(remarksLabel);
             this.Controls.Add(this.remarksTextBox);
             this.Controls.Add(airFilterLabel);
