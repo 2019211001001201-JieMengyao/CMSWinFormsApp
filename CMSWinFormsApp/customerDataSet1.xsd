@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="customerDataSet1" targetNamespace="http://tempuri.org/customerDataSet1.xsd" xmlns:mstns="http://tempuri.org/customerDataSet1.xsd" xmlns="http://tempuri.org/customerDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="customerDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="customerDataSet1" msprop:Generator_DataSetName="customerDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblCustomer" msprop:Generator_RowEvHandlerName="tblCustomerRowChangeEventHandler" msprop:Generator_RowDeletedName="tblCustomerRowDeleted" msprop:Generator_RowDeletingName="tblCustomerRowDeleting" msprop:Generator_RowEvArgName="tblCustomerRowChangeEvent" msprop:Generator_TablePropName="tblCustomer" msprop:Generator_RowChangedName="tblCustomerRowChanged" msprop:Generator_RowChangingName="tblCustomerRowChanging" msprop:Generator_TableClassName="tblCustomerDataTable" msprop:Generator_RowClassName="tblCustomerRow" msprop:Generator_TableVarName="tabletblCustomer" msprop:Generator_UserTableName="tblCustomer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CarNo" msprop:Generator_ColumnPropNameInRow="CarNo" msprop:Generator_ColumnPropNameInTable="CarNoColumn" msprop:Generator_ColumnVarNameInTable="columnCarNo" msprop:Generator_UserColumnName="CarNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_UserColumnName="Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Make" msprop:Generator_ColumnPropNameInRow="Make" msprop:Generator_ColumnPropNameInTable="MakeColumn" msprop:Generator_ColumnVarNameInTable="columnMake" msprop:Generator_UserColumnName="Make" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblCustomer" />
+      <xs:field xpath="mstns:CarNo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
